@@ -3,6 +3,9 @@ phpframe-simple
 
 自己写的php小框架，方便，简单
 
+#ToDoList
+ * 希望在数据库中加入备注 例如 #controller@base.php (line) databasename
+
 #框架介绍
  * 框架目录结构
     |– controller 所有的controller都放在这个文件夹下
