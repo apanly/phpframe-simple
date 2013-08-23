@@ -14,7 +14,7 @@ phpframe-simple
     | |– aController.php
     |– layout 相同的布局目录
     |– resource   框架核心
-    | |– cache
+    | |– cache   此目录其他用户必须有写的权限
     | | |– autoload.php
     | | |– 其他一些常用文件
     | |– class   所有的类文件，如果以class.php结尾的可以实现自动加载
