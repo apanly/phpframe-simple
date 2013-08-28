@@ -28,8 +28,22 @@ function require_class($name,$type){
        }
 }
 
-function upf_error($error, $errno = 500) {
-    echo $error;
-    if (error_reporting() == 0) return false;
-    //throw new Exception($error, $errno);
+
+function customError($errno, $errstr, $errfile, $errline)
+{
+    $tmp= "<b>Custom error:</b> [$errno] $errstr<br />";
+    $tmp.= " Error on line $errline in $errfile<br />";
+    customlog($tmp);
+}
+
+function customException($e){
+    $tmp= "Exception:".$e->getMessage();
+    $tmp.=var_export(debug_backtrace(),true);
+    customlog($tmp);
+}
+
+function customlog($message){
+    openlog("phpsimple", LOG_PID, LOG_USER);
+    syslog(LOG_INFO, $message);
+    closelog();
 }

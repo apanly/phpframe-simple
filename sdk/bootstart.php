@@ -39,5 +39,5 @@ if (strpos($filepath, ".php")) {
 try{
     Dispatcher::getInstance()->dispatch($config['mvc'][$tmpindex] ? $config['mvc'][$tmpindex] : $config['mvc']['default']);
 }catch(Exception $e){
-    echo $e->getMessage();
+    throw new Exception($e->getMessage());
 }

@@ -36,7 +36,7 @@ class Dispatcher
             }
            $this->output($content);
         } catch (Exception $e) {
-           echo $e->getMessage();exit();
+           throw new Exception($e->getMessage());
         }
     }
     public function setAct($a){
@@ -67,5 +67,11 @@ class Dispatcher
 //       $aa='<iframe scrolling="no" frameborder="0" allowtransparency="true" style="position: fixed; z-index: 2147483647; border: 0px none; height: 30px; overflow: hidden; width: 140px; bottom: 0px; right: 0px;display: none;" src="aa.php"></iframe>';
 //       $content=str_replace("</body>",$aa."</body>",$content);
        echo $content;
+   }
+
+   private function __construct(){
+       //set error handler
+       set_error_handler("customError");
+       set_exception_handler('customException');
    }
 }

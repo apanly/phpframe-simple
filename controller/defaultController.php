@@ -8,6 +8,8 @@ class defaultController extends Controller
         $target=new Mysql();
         $target->query("111");
         //return $this->render();
+        trigger_error("A custom error has been triggered");
+        throw new Exception('Uncaught Exception occurred');
         return $this->render("default");
     }
 }
