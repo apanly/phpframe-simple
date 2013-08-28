@@ -47,6 +47,7 @@ class Mysql
     //查询
     public function query($sql)
     {
+        //var_dump(debug_backtrace());
         $this->write_log("查询 " . $sql);
         $query = mysql_query($sql, $this->link_id);
         if (!$query) $this->halt('Query Error: ' . $sql);

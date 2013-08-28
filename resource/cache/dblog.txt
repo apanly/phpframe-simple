@@ -1,0 +1,30 @@
+2013-08-23 23:54:23 查询 111
+2013-08-23 23:54:23 Query Error: 111
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '111' at line 1
+2013-08-23 23:54:23 释放结果集
+2013-08-23 23:54:23 完成整个查询任务,所用时间为0.0016269683837891
+2013-08-23 23:54:26 查询 111
+2013-08-23 23:54:26 Query Error: 111
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '111' at line 1
+2013-08-23 23:54:26 释放结果集
+2013-08-23 23:54:26 完成整个查询任务,所用时间为0.0023181438446045
+2013-08-23 23:56:56 查询 111
+2013-08-23 23:56:56 Query Error: 111
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '111' at line 1
+2013-08-23 23:56:56 释放结果集
+2013-08-23 23:56:56 完成整个查询任务,所用时间为0.0010747909545898
+2013-08-23 23:56:57 查询 111
+2013-08-23 23:56:57 Query Error: 111
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '111' at line 1
+2013-08-23 23:56:57 释放结果集
+2013-08-23 23:56:57 完成整个查询任务,所用时间为0.0012609958648682
+2013-08-23 23:56:58 查询 111
+2013-08-23 23:56:58 Query Error: 111
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '111' at line 1
+2013-08-23 23:56:58 释放结果集
+2013-08-23 23:56:58 完成整个查询任务,所用时间为0.00124192237854
+2013-08-23 23:56:58 查询 111
+2013-08-23 23:56:58 Query Error: 111
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '111' at line 1
+2013-08-23 23:56:58 释放结果集
+2013-08-23 23:56:58 完成整个查询任务,所用时间为0.0010349750518799
