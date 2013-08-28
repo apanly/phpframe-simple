@@ -5,6 +5,8 @@ phpframe-simple
 
 #ToDoList
  * 希望在数据库中加入备注 例如 #controller@base.php (line) databasename
+ * set_error_handler();set_exception_handler();register_shutdown_function
+ * syslog()
 
 #框架介绍
  * 框架目录结构
