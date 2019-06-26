@@ -49,9 +49,12 @@ phpframe-simple
  如果你想做多个入口文件，你可以新建a.php，b.php，只要你包括的上面的代码都可以，这样的入口文件的好处不需要rewrite扩展的支持
 
    * 框架核心介绍,本框架是一个非常简单的MVC模式，这个框架基本上把M层弱化了，并且本框架有一个优点，不需要开发人员关系C，V的之间的映射关系
-     如何实现的?本框架的核心就是resource/core下的dispatcher进行控制的，这个分发控制类会根据c和a的参数决定你的controller位置和需要执行
-     的方法。由于所有的controller都是放在项目下的controller文件夹下，而如何去命令的，这个会根据你请求的c参数决定文件名，但是所有的
-     controller命令规范都是类似paramController.php的这样的格式，例如一个请求是index.php?c=aa&a=bb,所以你只要在controller新建文件
+     ```
+     如何实现的?
+        本框架的核心就是resource/core下的dispatcher进行控制的，这个分发控制类会根据c和a的参数决定你的controller位置和需要执行
+     的方法。
+        由于所有的controller都是放在项目下的controller文件夹下，而如何去命令的，这个会根据你请求的c参数决定文件名，但是所有的
+     controller命令规范都是类似paramController.php的这样的格式， 例如一个请求是index.php?c=aa&a=bb,所以你只要在controller新建文件
      aaController.php,并且继承Conroller类而且在aaController.php中实现`public function bbAction(){}`即可。
      如何渲染页面(render)?这个其实不需要开发太多的关注这个事情，只需要调用`return $this->render();//这个方法是每个Controller集成父类的方法`
      方法就可以了，那么如何使用到了layout共用模板，示例如下`return $this->render("test");`,这样就会使用layout下的test.php作为共用模板的。
@@ -69,5 +72,6 @@ phpframe-simple
            `<?php var_dump($data);?>`
         layoutname.php //这个放在layout文件夹下
             `<html><head></head><body><?php echo $layoutcontent;?></body></html>`
+     ```
    * 框架关键技术
 
