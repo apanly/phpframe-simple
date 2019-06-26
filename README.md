@@ -10,6 +10,7 @@ phpframe-simple
 
 #框架介绍
  * 框架目录结构
+```
     |– controller 所有的controller都放在这个文件夹下
     | |– aController.php
     |– layout 相同的布局目录
@@ -32,16 +33,19 @@ phpframe-simple
     | | |– b.php   以action命令的php文件
     | |-slot  这里是存放slot片段的文件夹
     |– index.php 入口文件
+```
  * 框架流程
    * 本框架是多入口文件，例如目录结构的index.php，就是一个入口文件,一般入口文件只需要包含一个文件即可，示例如下
-   `<?php
+   ```
+    <?php
         if(count($argv)==3){
             $_GET['c']=$argv[1]?$argv[1]:"default";//这是为了兼容命令行模式 定义controller
             $_GET['a']=$argv[2]?$argv[2]:"default";//这是为了兼容命令行模式 定义Action
         }
         define("ROOT_PATH", realpath(dirname(__FILE__) . "/./") . "/");
         include(ROOT_PATH."./resource/bootstart.php");
-   ?>`
+   ?>
+   ```
  如果你想做多个入口文件，你可以新建a.php，b.php，只要你包括的上面的代码都可以，这样的入口文件的好处不需要rewrite扩展的支持
 
    * 框架核心介绍,本框架是一个非常简单的MVC模式，这个框架基本上把M层弱化了，并且本框架有一个优点，不需要开发人员关系C，V的之间的映射关系
